@@ -11,7 +11,7 @@ New Features:
  
  How to use:
   Download all files in a root directory.
-  I used flask version 1.1.2
+  I used flask version 1.1.2.
   Configure <app.configure> section as per requirement in order to make connection with your database
   I used XAMPP for mysql.
   Change the post of MySQL to 3305.
