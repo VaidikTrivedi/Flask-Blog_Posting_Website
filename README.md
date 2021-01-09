@@ -16,4 +16,32 @@ New Features:
   I used XAMPP for mysql.
   Change the post of MySQL to 3305.
   All CSS and JavaScript are online factable. 
+  Table's Descriptions:
+  
+   MySQLDB [flaskapp]> DESC users;
+  +---------------+--------------+------+-----+---------------------+----------------+
+  | Field         | Type         | Null | Key | Default             | Extra          |
+  +---------------+--------------+------+-----+---------------------+----------------+
+  | id            | int(11)      | NO   | PRI | NULL                | auto_increment |
+  | name          | varchar(100) | YES  |     | NULL                |                |
+  | email         | varchar(100) | YES  |     | NULL                |                |
+  | username      | varchar(30)  | YES  |     | NULL                |                |
+  | password      | varchar(150) | YES  |     | NULL                |                |
+  | register_date | timestamp    | NO   |     | current_timestamp() |                |
+  | role          | varchar(50)  | YES  |     | NULL                |                |
+  +---------------+--------------+------+-----+---------------------+----------------+
+  7 rows in set (0.057 sec)
+
+  MySQLDB [flaskapp]> DESC articles;
+  +-------------+--------------+------+-----+---------------------+----------------+
+  | Field       | Type         | Null | Key | Default             | Extra          |
+  +-------------+--------------+------+-----+---------------------+----------------+
+  | id          | int(11)      | NO   | PRI | NULL                | auto_increment |
+  | title       | varchar(255) | YES  |     | NULL                |                |
+  | author      | varchar(100) | YES  |     | NULL                |                |
+  | body        | text         | YES  |     | NULL                |                |
+  | create_date | timestamp    | NO   |     | current_timestamp() |                |
+  +-------------+--------------+------+-----+---------------------+----------------+
+  5 rows in set (0.015 sec)
+  
   Thank You.
